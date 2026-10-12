@@ -1,0 +1,148 @@
+// UPGRADE THE ANALYSIS (Stage: EXPLAIN → CONNECT)
+// Students rewrite a weak statement. The writing coach gives live feedback on which
+// components are present; `progression` reveals one possible route up the ladder.
+// `facts` give students accurate musical evidence to work with.
+// `expect` = components the coach checks for (see utils/coach.js COMPONENTS).
+
+export const upgradeQuestions = [
+  {
+    id: 'up-001', type: 'upgrade', category: 'upgrade', difficulty: 'beginner', skills: ['effect', 'evidence'],
+    weak: 'The music gets louder.',
+    theme: 'conflict', song: 'zombie',
+    facts: ['The verses are restrained; each chorus crashes in with heavily distorted guitars and pounding drums.', 'The vocal becomes rawer and more strained in the chorus.'],
+    expect: ['terminology', 'evidence', 'effect', 'meaning', 'theme'],
+    progression: [
+      'The dynamics increase in the chorus.',
+      'The sudden dynamic contrast in the chorus increases the intensity.',
+      'The sudden dynamic contrast between the restrained verse and the distorted chorus creates an explosive intensity.',
+      'The sudden dynamic contrast between the restrained verse and the distorted chorus creates an explosive intensity, presenting conflict as violence that erupts again and again.',
+    ],
+    explanation: 'Each step adds one thing: terminology → effect → specific evidence (sudden, verse → chorus) → meaning and theme.',
+  },
+  {
+    id: 'up-002', type: 'upgrade', category: 'upgrade', difficulty: 'beginner', skills: ['effect', 'evidence'],
+    weak: 'The song is sad.',
+    theme: 'heartbreak', song: 'someone-like-you',
+    facts: ['Voice and piano only.', 'The vocal phrases often fall at their endings.', 'The chorus moves into a higher, more strained register.'],
+    expect: ['terminology', 'evidence', 'effect', 'meaning', 'theme'],
+    progression: [
+      'The melody is sad.',
+      'The descending vocal phrases create a sad feeling.',
+      'The descending vocal phrases, heard over a bare piano accompaniment, create a sense of resignation.',
+      'The descending vocal phrases, heard over a bare piano accompaniment, create a sense of resignation, presenting heartbreak as something the speaker has stopped fighting.',
+    ],
+    explanation: 'Replace a mood label ("sad") with evidence (descending phrases, bare texture), an effect (resignation) and a specific claim about the theme.',
+  },
+  {
+    id: 'up-003', type: 'upgrade', category: 'upgrade', difficulty: 'beginner', skills: ['effect', 'evidence'],
+    weak: 'The composer uses dynamics.',
+    theme: 'isolation', song: 'what-was-i-made-for',
+    facts: ['The dynamics stay very quiet throughout, even when strings enter in the middle of the song.', 'The soft, breathy vocal sits over sparse piano.'],
+    expect: ['terminology', 'evidence', 'effect', 'meaning', 'theme'],
+    progression: [
+      'The dynamics are quiet.',
+      'The dynamics stay very quiet throughout, even when strings enter.',
+      'The dynamics stay restrained even when strings enter, so the music never swells to a climax and the breathy vocal stays exposed, creating a sense of fragility.',
+      'The dynamics stay restrained even when strings enter, so the music never swells to a climax and the breathy vocal stays exposed, creating a sense of fragility that emphasises the speaker\'s isolation.',
+    ],
+    explanation: '"Uses dynamics" names an element. Upgrade by saying what happens (stays very quiet), where (even when strings enter), what it does (keeps the vocal exposed, fragility) and what it means (isolation).',
+  },
+  {
+    id: 'up-004', type: 'upgrade', category: 'upgrade', difficulty: 'developing', skills: ['effect', 'evidence'],
+    weak: 'This makes the listener feel emotional.',
+    theme: 'grief', song: 'fix-you',
+    facts: ['Opens with sustained organ chords.', 'Fragile falsetto vocal.', 'The full band does not enter until much later.'],
+    expect: ['terminology', 'evidence', 'effect', 'meaning', 'theme'],
+    progression: [
+      'The opening makes the listener feel sad.',
+      'The sustained organ chords and falsetto vocal create a fragile atmosphere.',
+      'The sustained organ chords and fragile falsetto vocal create a still, hushed atmosphere of vulnerability.',
+      'The sustained organ chords and fragile falsetto vocal create a still, hushed atmosphere of vulnerability, presenting grief as a moment of quiet suspension before any healing can begin.',
+    ],
+    explanation: '"Feel emotional" is too broad. Name the precise effect (stillness, vulnerability) and what it suggests about the theme.',
+  },
+  {
+    id: 'up-005', type: 'upgrade', category: 'upgrade', difficulty: 'developing', skills: ['effect', 'evidence'],
+    weak: 'The song is about peace.',
+    theme: 'peace', song: 'imagine',
+    facts: ['Simple, repetitive piano chords.', 'Steady moderate tempo.', 'Very little dynamic variation.'],
+    expect: ['terminology', 'evidence', 'effect', 'meaning', 'theme'],
+    progression: [
+      'The song presents peace.',
+      'The song presents peace as calm.',
+      'The simple, repeating piano harmony and narrow dynamic range create a sense of calm stability.',
+      'The simple, repeating piano harmony and narrow dynamic range create a sense of calm stability, presenting peace as an attainable ideal rather than a distant dream.',
+    ],
+    explanation: '"Is about" is a topic. "Presents … as …" is a claim. Then support it with evidence and effect.',
+  },
+  {
+    id: 'up-006', type: 'upgrade', category: 'upgrade', difficulty: 'developing', skills: ['effect', 'evidence', 'interconnectivity'],
+    weak: 'The melody goes down. There is only piano. The chorus is higher.',
+    theme: 'heartbreak', song: 'someone-like-you',
+    facts: ['Vocal phrases fall at their endings in the verses.', 'A bare voice-and-piano texture.', 'A leap into a higher, strained register in the chorus.'],
+    expect: ['terminology', 'effect', 'meaning', 'theme', 'connection'],
+    progression: [
+      'The melody falls, the texture is voice and piano, and the chorus is higher.',
+      'The falling phrases create a sense of resignation, while the higher chorus increases the intensity.',
+      'The falling verse phrases establish a sense of resignation, while the bare texture leaves the voice exposed and the leap into the chorus strains against that resignation.',
+      'The falling verse phrases establish a sense of resignation, while the bare texture leaves the voice exposed and the leap into the chorus strains against that resignation. Together, these elements present heartbreak as a resignation that cannot stay contained.',
+    ],
+    explanation: 'This is a list, not analysis. Upgrade by connecting the elements: "while…", "together, these elements…".',
+  },
+  {
+    id: 'up-007', type: 'upgrade', category: 'upgrade', difficulty: 'developing', skills: ['effect', 'evidence'],
+    weak: 'The song is good.',
+    theme: 'triumph', song: 'we-are-the-champions',
+    facts: ['Restrained piano-led verses.', 'Chorus with full band and heavily layered vocals.', 'Broad, swaying compound metre.'],
+    expect: ['terminology', 'evidence', 'effect', 'meaning', 'theme', 'judgement'],
+    progression: [
+      'The chorus is powerful.',
+      'The chorus is powerful because of the layered vocals.',
+      'The heavily layered vocals in the chorus create the sound of many voices joining together.',
+      'The heavily layered vocals in the chorus create the sound of many voices joining together, effectively presenting triumph as a collective celebration earned through shared struggle.',
+    ],
+    explanation: 'Turn an opinion into a supported evaluation: what makes it effective, and effective at communicating what?',
+  },
+  {
+    id: 'up-008', type: 'upgrade', category: 'upgrade', difficulty: 'confident', skills: ['effect', 'evidence', 'argument'],
+    weak: 'The key change is effective.',
+    theme: 'change', song: 'man-in-the-mirror',
+    facts: ['The song modulates up a semitone ahead of the final section.', 'A gospel choir joins the texture.'],
+    expect: ['terminology', 'evidence', 'effect', 'meaning', 'theme', 'judgement'],
+    progression: [
+      'The key change is effective because it is surprising.',
+      'The upward modulation raises the energy of the final section.',
+      'The upward modulation lifts the final section into a brighter, more intense register, creating a sense of renewed conviction.',
+      'The upward modulation lifts the final section into a brighter, more intense register, creating renewed conviction that — reinforced by the entry of the gospel choir — effectively presents personal change as gathering momentum into collective action.',
+    ],
+    explanation: 'An evaluation ("effective") needs a reason. Explain the effect, link to meaning, and support with a second element.',
+  },
+  {
+    id: 'up-009', type: 'upgrade', category: 'upgrade', difficulty: 'confident', skills: ['effect', 'evidence'],
+    weak: 'The singer sings high.',
+    theme: 'identity', song: 'what-was-i-made-for',
+    facts: ['Soft, breathy vocal.', 'Frequent head voice / falsetto.', 'Sparse piano accompaniment.'],
+    expect: ['terminology', 'evidence', 'effect', 'meaning', 'theme'],
+    progression: [
+      'The singer uses falsetto.',
+      'The breathy falsetto sounds fragile.',
+      'The breathy, close-miked falsetto over sparse piano creates an intimate, fragile quality, as if the singer is confiding.',
+      'The breathy, close-miked falsetto over sparse piano creates an intimate, fragile quality, as if the singer is confiding, presenting identity as uncertain and easily shaken.',
+    ],
+    explanation: 'Upgrade "sings high" with precise terms (falsetto, breathy, sparse), an effect (intimacy, fragility) and a claim about identity.',
+  },
+  {
+    id: 'up-010', type: 'upgrade', category: 'upgrade', difficulty: 'exam', skills: ['effect', 'evidence', 'interconnectivity', 'argument'],
+    weak: 'The drums are loud and the guitar is distorted.',
+    theme: 'conflict', song: 'zombie',
+    facts: ['Pounding drums in the chorus.', 'Heavily distorted electric guitars.', 'The same four-chord progression repeats beneath an increasingly strained vocal.'],
+    expect: ['terminology', 'evidence', 'effect', 'meaning', 'theme', 'connection', 'judgement'],
+    progression: [
+      'The drums pound and the guitars are distorted in the chorus.',
+      'The pounding drums and distorted guitars create an aggressive energy.',
+      'The pounding drums and distorted guitars create an aggressive energy, while the unchanging chord progression creates a sense of being locked in place.',
+      'The pounding drums and distorted guitars create an aggressive energy, while the unchanging chord progression locks the music in place beneath an increasingly strained vocal. Together, these elements effectively present conflict as a cycle of violence that cannot be escaped.',
+    ],
+    explanation: 'At exam level, aim for the full chain: evidence → effect → interconnectivity → meaning → evaluation.',
+  },
+];
