@@ -2,7 +2,7 @@
 // - The page itself: network first (so updates arrive as soon as you are online), cached copy when offline.
 // - Icons, manifest and fonts: cache first, refreshed in the background.
 // Bump VERSION when publishing an update to clear old caches.
-const VERSION = 'v14';
+const VERSION = 'v15';
 const CACHE = `music-trainer-${VERSION}`;
 const CORE = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png', './icon.svg', './favicon-32.png', './apple-touch-icon.png'];
 
